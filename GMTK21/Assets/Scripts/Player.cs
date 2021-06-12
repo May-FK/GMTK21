@@ -27,6 +27,10 @@ public class Player : MonoBehaviour
         Move();
         //transform.position = position;
         if (col) Connect();
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            LevelChanger.ReloadScene();
+        }
     }
 
     void FixedUpdate()

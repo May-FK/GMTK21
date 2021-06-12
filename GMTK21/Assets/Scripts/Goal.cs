@@ -5,6 +5,7 @@ using UnityEngine;
 public class Goal : MonoBehaviour
 {
     public int goalSize;
+    public int maxMoves;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,6 +16,11 @@ public class Goal : MonoBehaviour
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
+        {
+            CheckPlayer();
+        }
+
+        if(MoveCounter.GetMoves() == maxMoves)
         {
             CheckPlayer();
         }
@@ -33,6 +39,7 @@ public class Goal : MonoBehaviour
         }
         else
         {
+            LevelChanger.NextScene();
             Debug.Log("You fit!");
         }
     }

@@ -3182,6 +3182,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   goalSize: 2
+  maxMoves: -1
 --- !u!1001 &1794035671
 PrefabInstance:
   m_ObjectHideFlags: 0
