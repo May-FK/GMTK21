@@ -6,15 +6,19 @@ public class Player : MonoBehaviour
 {
     Vector2 position;
     Collider2D col;
+    public static int playerSize;
+    public static bool outOfGoal;
+    public static bool inGoal;
     // Start is called before the first frame update
     void Start()
     {
-        
+        playerSize = transform.childCount;
     }
 
     // Update is called once per frame
     void Update()
     {
+        playerSize = transform.childCount;
         position = transform.position;
         Move();
         transform.position = position;
@@ -62,12 +66,34 @@ public class Player : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Player")) return;
-        col = collision;
+        if (collision.gameObject.CompareTag("Out Of Goal"))
+        {
+            outOfGoal = true;
+        }
+        if (collision.gameObject.CompareTag("In Goal"))
+        {
+            inGoal = true;
+        }
+        if (collision.gameObject.CompareTag("Block"))
+        {
+            col = collision;
+        }
+        
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        col = null;
+        if (collision.gameObject.CompareTag("Out Of Goal"))
+        {
+            outOfGoal = false;
+        }
+        if (collision.gameObject.CompareTag("In Goal"))
+        {
+            inGoal = false;
+        }
+        if (collision.gameObject.CompareTag("Block"))
+        {
+            col = null;
+        }
     }
 }

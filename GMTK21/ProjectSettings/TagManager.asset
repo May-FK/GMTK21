@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Out Of Goal
   - In Goal
+  - Block
+  - Destroy
   layers:
   - Default
   - TransparentFX

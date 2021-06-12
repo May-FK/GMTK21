@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8526108306628042558}
   - component: {fileID: 8526108306628042559}
+  - component: {fileID: 8794928417669571048}
   - component: {fileID: 8526108306628042557}
   - component: {fileID: 3829384992434828544}
   - component: {fileID: 2052206275683848649}
@@ -17,7 +18,7 @@ GameObject:
   - component: {fileID: 2794716808629921820}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -87,6 +88,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &8794928417669571048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8526108306628042544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3434ff6417fa07b42ba092b0edb22c3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!61 &8526108306628042557
 BoxCollider2D:
   m_ObjectHideFlags: 0
