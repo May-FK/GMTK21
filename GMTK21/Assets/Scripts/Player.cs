@@ -6,6 +6,7 @@ public class Player : MonoBehaviour
 {
     Vector2 position;
     Collider2D col;
+    Collider2D col2;
     Rigidbody2D rb;
     public static int playerSize;
     public static bool outOfGoal;
@@ -15,6 +16,8 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        outOfGoal = false;
+        inGoal = false;
         playerSize = transform.childCount;
         rb = gameObject.GetComponent<Rigidbody2D>();
     }
@@ -99,40 +102,56 @@ public class Player : MonoBehaviour
             {
                 col.transform.SetParent(this.transform);
                 col.gameObject.tag = "Player";
+                col = null;
             }
         }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if (collision.gameObject.CompareTag("Block"))
+        {
+            Debug.Log("Entering Block");
+            col = collision;
+        }
         if (collision.gameObject.CompareTag("Out Of Goal"))
         {
             outOfGoal = true;
         }
         if (collision.gameObject.CompareTag("In Goal"))
         {
+            Debug.Log("Entering Goal");
             inGoal = true;
         }
+        
+        
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
         if (collision.gameObject.CompareTag("Block"))
         {
+            Debug.Log("Entering Block");
             col = collision;
         }
-        
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
+        if (collision.gameObject.CompareTag("Block"))
+        {
+            Debug.Log("Leaving Block");
+            col = null;
+        }
         if (collision.gameObject.CompareTag("Out Of Goal"))
         {
             outOfGoal = false;
         }
         if (collision.gameObject.CompareTag("In Goal"))
         {
+            Debug.Log("Leaving Goal");
             inGoal = false;
         }
-        if (collision.gameObject.CompareTag("Block"))
-        {
-            col = null;
-        }
+        
     }
 }

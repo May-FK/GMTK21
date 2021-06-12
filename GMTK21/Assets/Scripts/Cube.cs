@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Cube : MonoBehaviour
 {
-    bool destroy;
+    public Collider2D left, right, top, bottom;
     SpriteRenderer sr;
     public Sprite sprite;
     // Start is called before the first frame update
@@ -20,10 +20,10 @@ public class Cube : MonoBehaviour
         {
             sr.sprite = sprite;
             sr.sortingOrder = 5;
-        }
-        if(Input.GetKeyDown(KeyCode.Space) && destroy)
-        {
-            Destroy(this.gameObject);
+            left.enabled = false;
+            right.enabled = false;
+            top.enabled = false;
+            bottom.enabled = false;
         }
     }
 
@@ -31,15 +31,8 @@ public class Cube : MonoBehaviour
     {
         if (col.gameObject.CompareTag("Destroy"))
         {
-            destroy = true;
-        }
-    }
-
-    void OnTriggerExit2D(Collider2D col)
-    {
-        if (col.gameObject.CompareTag("Destroy"))
-        {
-            destroy = false;
+            Destroy(col.gameObject);
+            Destroy(this.gameObject);
         }
     }
 }

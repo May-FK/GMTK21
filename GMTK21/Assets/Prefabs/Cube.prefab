@@ -102,6 +102,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3434ff6417fa07b42ba092b0edb22c3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  left: {fileID: 3829384992434828544}
+  right: {fileID: 2794716808629921820}
+  top: {fileID: 3231574928761908489}
+  bottom: {fileID: 2052206275683848649}
   sprite: {fileID: 21300000, guid: b6a1c537760876644911012425f7e776, type: 3}
 --- !u!61 &3829384992434828544
 BoxCollider2D:
@@ -127,7 +131,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.15, y: 0.15}
+  m_Size: {x: 0.2, y: 0.2}
   m_EdgeRadius: 0
 --- !u!61 &2052206275683848649
 BoxCollider2D:
@@ -153,7 +157,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.15, y: 0.15}
+  m_Size: {x: 0.2, y: 0.2}
   m_EdgeRadius: 0
 --- !u!61 &3231574928761908489
 BoxCollider2D:
@@ -179,7 +183,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 1
   serializedVersion: 2
-  m_Size: {x: 0.15, y: 0.15}
+  m_Size: {x: 0.2, y: 0.2}
   m_EdgeRadius: 0
 --- !u!61 &2794716808629921820
 BoxCollider2D:
@@ -205,7 +209,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.15, y: 0.15}
+  m_Size: {x: 0.2, y: 0.2}
   m_EdgeRadius: 0
 --- !u!68 &8009835904159583459
 EdgeCollider2D:

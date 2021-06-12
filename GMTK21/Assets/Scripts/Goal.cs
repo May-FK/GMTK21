@@ -22,12 +22,13 @@ public class Goal : MonoBehaviour
 
         if(MoveCounter.GetMoves() == maxMoves)
         {
-            CheckPlayer();
+            //CheckPlayer();
         }
     }
 
     void CheckPlayer()
     {
+        //Debug.Log("Checking Player");
         if (!Player.inGoal) return;
         else if (Player.outOfGoal)
         {
