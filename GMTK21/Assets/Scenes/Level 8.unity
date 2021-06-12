@@ -3707,6 +3707,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1327e9497d681b4ea109a2135f27ea1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pause: {fileID: 0}
 --- !u!4 &1374514600
 Transform:
   m_ObjectHideFlags: 0
@@ -4773,7 +4774,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d663af08823764b42ac07397a708cb8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  goalSize: 2
+  goalSize: 4
   maxMoves: 30
 --- !u!4 &2057973699
 Transform:
