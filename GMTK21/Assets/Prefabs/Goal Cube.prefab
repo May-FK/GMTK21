@@ -119,7 +119,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8216760773001148426}
   - component: {fileID: 8216760773001148428}
-  - component: {fileID: 8216760773001148429}
+  - component: {fileID: 8335916643034236213}
   m_Layer: 0
   m_Name: Goal Cube
   m_TagString: In Goal
@@ -184,7 +184,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: f696ad24b790a7c4787a811c5e365205, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -196,7 +196,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &8216760773001148429
+--- !u!61 &8335916643034236213
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

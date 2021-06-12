@@ -6,45 +6,80 @@ public class Player : MonoBehaviour
 {
     Vector2 position;
     Collider2D col;
+    Rigidbody2D rb;
     public static int playerSize;
     public static bool outOfGoal;
     public static bool inGoal;
+
+    bool left, right, up, down;
     // Start is called before the first frame update
     void Start()
     {
         playerSize = transform.childCount;
+        rb = gameObject.GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
     void Update()
     {
         playerSize = transform.childCount;
-        position = transform.position;
+        //position = transform.position;
         Move();
-        transform.position = position;
+        //transform.position = position;
         if (col) Connect();
+    }
+
+    void FixedUpdate()
+    {
+        position = transform.position;
+        if (up)
+        {
+            position.y += 1;
+        }
+        else if (down)
+        {
+            position.y -= 1;
+        }
+        else if (right)
+        {
+            position.x += 1;
+        }
+        else if (left)
+        {
+            position.x -= 1;
+        }
+        rb.MovePosition(position);
+        left = false;
+        right = false;
+        up = false;
+        down = false;
     }
 
     void Move()
     {
+        if (left || right || up || down) return;
         if (Input.GetKeyDown(KeyCode.W))
         {
-            position.y += 1f;
+            up = true;
+            //position.y += 1f;
         }
 
         else if (Input.GetKeyDown(KeyCode.A))
         {
-            position.x -= 1f;
+            left = true;
+            //position.x -= 1f;
         }
 
         else if (Input.GetKeyDown(KeyCode.S))
         {
-            position.y -= 1f;
+            down = true;
+            //position.y -= 1f;
         }
 
         else if (Input.GetKeyDown(KeyCode.D))
         {
-            position.x += 1f;
+            right = true;
+            //position.x += 1f;
         }
 
         else return;

@@ -6,6 +6,7 @@ public class Cube : MonoBehaviour
 {
     bool destroy;
     SpriteRenderer sr;
+    public Sprite sprite;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,7 +18,8 @@ public class Cube : MonoBehaviour
     {
         if (this.gameObject.CompareTag("Player"))
         {
-            sr.sortingOrder = 1;
+            sr.sprite = sprite;
+            sr.sortingOrder = 5;
         }
         if(Input.GetKeyDown(KeyCode.Space) && destroy)
         {
