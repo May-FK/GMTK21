@@ -19,13 +19,13 @@ public class LevelChanger : MonoBehaviour
 
     public static void NextScene()
     {
-        MoveCounter.ResetMoves();
+        //MoveCounter.ResetMoves();
         SceneManager.LoadScene((SceneManager.GetActiveScene().buildIndex + 1));
     }
 
     public static void ReloadScene()
     {
-        MoveCounter.ResetMoves();
+        //MoveCounter.ResetMoves();
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }

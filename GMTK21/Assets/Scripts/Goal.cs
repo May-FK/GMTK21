@@ -9,7 +9,7 @@ public class Goal : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        MoveCounter.SetMoves(maxMoves);
     }
 
     // Update is called once per frame

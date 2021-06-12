@@ -6,9 +6,14 @@ public static class MoveCounter
 {
     private static int moves;
 
-    public static void ResetMoves()
+    /*public static void ResetMoves()
     {
         moves = 0;
+    }*/
+
+    public static void SetMoves(int maxMoves)
+    {
+        moves = maxMoves;
     }
 
     public static int GetMoves()
@@ -16,8 +21,8 @@ public static class MoveCounter
         return moves;
     }
 
-    public static void AddToMoves()
+    public static void DecrementMoves()
     {
-        moves += 1;
+        moves -= 1;
     }
 }

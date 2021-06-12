@@ -88,7 +88,7 @@ public class Player : MonoBehaviour
 
         else return;
 
-        MoveCounter.AddToMoves();
+        MoveCounter.DecrementMoves();
     }
 
     void Connect()
