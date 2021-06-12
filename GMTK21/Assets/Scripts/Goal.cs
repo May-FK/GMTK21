@@ -6,6 +6,7 @@ public class Goal : MonoBehaviour
 {
     public int goalSize;
     public int maxMoves;
+    public GameObject retryScreen;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,9 +21,9 @@ public class Goal : MonoBehaviour
             CheckPlayer();
         }
 
-        if(MoveCounter.GetMoves() == maxMoves)
+        if(MoveCounter.GetMoves() == 0)
         {
-            //CheckPlayer();
+            FinalCheckPlayer();
         }
     }
 
@@ -32,16 +33,38 @@ public class Goal : MonoBehaviour
         if (!Player.inGoal) return;
         else if (Player.outOfGoal)
         {
-            Debug.Log("Part of you is sticking out!");
+            //Debug.Log("Part of you is sticking out!");
         }
         else if (Player.playerSize < goalSize)
         {
-            Debug.Log("You are too small!");
+           // Debug.Log("You are too small!");
         }
         else
         {
             LevelChanger.NextScene();
-            Debug.Log("You fit!");
+           // Debug.Log("You fit!");
         }
     }
+    void FinalCheckPlayer()
+    {
+        //Debug.Log("Checking Player");
+        if (!Player.inGoal) Debug.Log("rip");
+        else if (Player.outOfGoal)
+        {
+            //Debug.Log("Part of you is sticking out!");
+        }
+        else if (Player.playerSize < goalSize)
+        {
+            // Debug.Log("You are too small!");
+        }
+        else
+        {
+            LevelChanger.NextScene();
+            // Debug.Log("You fit!");
+        }
+
+        retryScreen.SetActive(true);
+        Time.timeScale = 0;
+    }
+
 }
