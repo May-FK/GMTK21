@@ -28,4 +28,14 @@ public class LevelChanger : MonoBehaviour
         //MoveCounter.ResetMoves();
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
+
+    public static void MainScene()
+    {
+        SceneManager.LoadScene("Main Menu");
+    }
+
+    public static void Quit()
+    {
+        Application.Quit();
+    }
 }

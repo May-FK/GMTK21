@@ -8,6 +8,8 @@ public class Player : MonoBehaviour
     Collider2D col;
     Collider2D col2;
     Rigidbody2D rb;
+    public GameObject pause;
+    bool isPaused = false;
     public static int playerSize;
     public static bool outOfGoal;
     public static bool inGoal;
@@ -16,6 +18,7 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Time.timeScale = 1;
         outOfGoal = false;
         inGoal = false;
         playerSize = transform.childCount;
@@ -33,6 +36,11 @@ public class Player : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.R))
         {
             LevelChanger.ReloadScene();
+        }
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (isPaused) UnPause();
+            else Pause();
         }
     }
 
@@ -60,6 +68,20 @@ public class Player : MonoBehaviour
         right = false;
         up = false;
         down = false;
+    }
+
+    private void Pause()
+    {
+        isPaused = true;
+        Time.timeScale = 0;
+        pause.SetActive(true);
+    }
+
+    public void UnPause()
+    {
+        isPaused = false;
+        Time.timeScale = 1;
+        pause.SetActive(false);
     }
 
     void Move()
