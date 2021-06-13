@@ -1905,6 +1905,7 @@ GameObject:
   - component: {fileID: 911689865}
   - component: {fileID: 911689864}
   - component: {fileID: 911689868}
+  - component: {fileID: 911689869}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -2008,7 +2009,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   menu: {fileID: 493083903}
   levels: {fileID: 731516608}
-  about: {fileID: 0}
+  about: {fileID: 511297499}
+--- !u!114 &911689869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 911689863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b593fa28ff50ddc4699d8c4e876d7279, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &941259342
 GameObject:
   m_ObjectHideFlags: 0
@@ -5135,7 +5148,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: -0.000045776367, y: 164.74124}
-  m_SizeDelta: {x: 250, y: 150}
+  m_SizeDelta: {x: 300, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2067172426
 MonoBehaviour:
@@ -5170,7 +5183,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Qub
+  m_Text: QUB
 --- !u!222 &2067172427
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5214,7 +5227,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: -325.2588}
-  m_SizeDelta: {x: 250, y: 150}
+  m_SizeDelta: {x: 300, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2092390515
 MonoBehaviour:
@@ -5249,7 +5262,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Qub
+  m_Text: QUB
 --- !u!222 &2092390516
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5583,7 +5596,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: -325.2588}
-  m_SizeDelta: {x: 250, y: 150}
+  m_SizeDelta: {x: 300, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2129428882
 MonoBehaviour:
@@ -5618,7 +5631,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Qub
+  m_Text: QUB
 --- !u!222 &2129428883
 CanvasRenderer:
   m_ObjectHideFlags: 0
