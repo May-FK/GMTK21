@@ -5730,6 +5730,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   goalSize: 3
   maxMoves: 8
+  retryScreen: {fileID: 1792341998}
 --- !u!4 &2083961899
 Transform:
   m_ObjectHideFlags: 0
