@@ -9,6 +9,7 @@ public class Score : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        moves.text = "Moves Remaining: " + MoveCounter.GetMoves();
+        if(moves != null)
+            moves.text = "Moves Remaining: " + MoveCounter.GetMoves();
     }
 }

@@ -123,6 +123,26 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!61 &115386856 stripped
+BoxCollider2D:
+  m_CorrespondingSourceObject: {fileID: 7118683448034316270, guid: 1692bc9a22769fc40a6f805f517a81c7, type: 3}
+  m_PrefabInstance: {fileID: 1699166276}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &115386857 stripped
+BoxCollider2D:
+  m_CorrespondingSourceObject: {fileID: 7555541020206926587, guid: 1692bc9a22769fc40a6f805f517a81c7, type: 3}
+  m_PrefabInstance: {fileID: 1699166276}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &115386858 stripped
+BoxCollider2D:
+  m_CorrespondingSourceObject: {fileID: 6375010733428340283, guid: 1692bc9a22769fc40a6f805f517a81c7, type: 3}
+  m_PrefabInstance: {fileID: 1699166276}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &115386859 stripped
+BoxCollider2D:
+  m_CorrespondingSourceObject: {fileID: 8153421452846093042, guid: 1692bc9a22769fc40a6f805f517a81c7, type: 3}
+  m_PrefabInstance: {fileID: 1699166276}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &120467874
 GameObject:
   m_ObjectHideFlags: 0
@@ -1729,6 +1749,7 @@ MonoBehaviour:
   goalSize: 2
   maxMoves: -1
   retryScreen: {fileID: 0}
+  thanks: {fileID: 0}
 --- !u!4 &1035773345
 Transform:
   m_ObjectHideFlags: 0
@@ -2967,6 +2988,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4471982123323229722, guid: 1692bc9a22769fc40a6f805f517a81c7, type: 3}
+      propertyPath: left
+      value: 
+      objectReference: {fileID: 115386859}
+    - target: {fileID: 4471982123323229722, guid: 1692bc9a22769fc40a6f805f517a81c7, type: 3}
+      propertyPath: right
+      value: 
+      objectReference: {fileID: 115386856}
+    - target: {fileID: 4471982123323229722, guid: 1692bc9a22769fc40a6f805f517a81c7, type: 3}
+      propertyPath: top
+      value: 
+      objectReference: {fileID: 115386857}
+    - target: {fileID: 4471982123323229722, guid: 1692bc9a22769fc40a6f805f517a81c7, type: 3}
+      propertyPath: bottom
+      value: 
+      objectReference: {fileID: 115386858}
     - target: {fileID: 4900603315453644724, guid: 1692bc9a22769fc40a6f805f517a81c7, type: 3}
       propertyPath: pause
       value: 
@@ -3018,6 +3055,22 @@ PrefabInstance:
     - target: {fileID: 4900603315453644727, guid: 1692bc9a22769fc40a6f805f517a81c7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6375010733428340283, guid: 1692bc9a22769fc40a6f805f517a81c7, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7118683448034316270, guid: 1692bc9a22769fc40a6f805f517a81c7, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7555541020206926587, guid: 1692bc9a22769fc40a6f805f517a81c7, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8153421452846093042, guid: 1692bc9a22769fc40a6f805f517a81c7, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1692bc9a22769fc40a6f805f517a81c7, type: 3}
