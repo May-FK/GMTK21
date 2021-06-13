@@ -4,15 +4,26 @@ using UnityEngine;
 
 public class Destroy : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public GameObject menu;
+    public GameObject levels;
+    public GameObject about;
+
+    public void showLevels()
     {
-        
+        menu.SetActive(false);
+        levels.SetActive(true);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void showMenu()
     {
-        
+        about.SetActive(false);
+        levels.SetActive(false);
+        menu.SetActive(true);
+    }
+
+    public void ShowAbout()
+    {
+        menu.SetActive(false);
+        about.SetActive(true);
     }
 }

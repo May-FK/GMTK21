@@ -1,12 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Goal : MonoBehaviour
 {
     public int goalSize;
     public int maxMoves;
     public GameObject retryScreen;
+    public GameObject thanks;
     // Start is called before the first frame update
     void Start()
     {
@@ -59,6 +61,11 @@ public class Goal : MonoBehaviour
         }
         else
         {
+            if(SceneManager.GetActiveScene().name == "Level 10")
+            {
+                thanks.SetActive(true);
+                Time.timeScale = 0;
+            }
             LevelChanger.NextScene();
             // Debug.Log("You fit!");
         }
