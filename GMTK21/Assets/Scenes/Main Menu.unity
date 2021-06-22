@@ -207,7 +207,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 911689868}
         m_TargetAssemblyTypeName: Destroy, Assembly-CSharp
-        m_MethodName: showLevels
+        m_MethodName: ShowAbout
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2011,7 +2011,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 687b2326f00922742b88fcb8dcbc0748, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  menu: {fileID: 493083903}
+  menu: {fileID: 786586395}
   levels: {fileID: 731516608}
   about: {fileID: 511297499}
 --- !u!114 &911689869
@@ -3617,7 +3617,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 911689868}
         m_TargetAssemblyTypeName: Destroy, Assembly-CSharp
-        m_MethodName: ShowAbout
+        m_MethodName: showLevels
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

@@ -1349,7 +1349,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &142986654
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1750,7 +1750,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &250348469
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7202,6 +7202,7 @@ MonoBehaviour:
   goalSize: 4
   maxMoves: 30
   retryScreen: {fileID: 1362482025}
+  thanks: {fileID: 0}
 --- !u!4 &2057973699
 Transform:
   m_ObjectHideFlags: 0
