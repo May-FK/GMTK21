@@ -1583,7 +1583,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -110}
-  m_SizeDelta: {x: 1000, y: 500}
+  m_SizeDelta: {x: 1100, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &863946153
 MonoBehaviour:
@@ -1622,8 +1622,8 @@ MonoBehaviour:
     this jam was "Joined Together"
 
 
-    QUB placed #1026 overall, out of 5816 total
-    entries, which was top 17.6%'
+    QUB placed 1026 overall out of 5816 total
+    submissions, which was the top 17.6% of entries'
 --- !u!222 &863946154
 CanvasRenderer:
   m_ObjectHideFlags: 0
